@@ -1,0 +1,8 @@
+argument_specs:
+  # roles/ansible-role-timezone/tasks/main.yml entry point
+  main:
+    short_description: The main entry point for the myapp role.
+    options:
+      timezone:
+        type: "str"
+        default: Etc/UTC

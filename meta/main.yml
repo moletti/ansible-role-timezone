@@ -1,0 +1,15 @@
+galaxy_info:
+  role_name: timezone
+  namespace: moletti
+  author: Leo Moletti
+  description: Base role for configure the time zone
+  license: MIT
+  min_ansible_version: "2.11"
+  platforms:
+   - name: Debian
+     versions:
+       - stretch
+       - buster
+  galaxy_tags: []
+
+dependencies: []
