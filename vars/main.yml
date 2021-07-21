@@ -1,1 +1,6 @@
 ---
+_timezone_dependencies:
+  default:
+    - tzdata
+
+timezone_dependencies: "{{ _timezone_dependencies[ansible_os_family] | default(_timezone_dependencies['default']) }}"
