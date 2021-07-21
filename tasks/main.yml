@@ -1,4 +1,6 @@
 ---
-- name: Set timezone to {{ timezone }}
-  community.general.timezone:
-    name: "{{ timezone }}"
+- import_tasks: dependecies.yml
+  tags: dependencies
+
+- import_tasks: timezone.yml
+  tags: timezone
